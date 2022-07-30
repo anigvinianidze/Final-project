@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;500;600;800;900&family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>Music Festival</title>
+    <link rel="icon" href="icon.ico">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="index.html">Tbilisi Open Air</a>
+        </h1>
+        <nav id="nav"></nav>
+    </header>
+    <main>
+        <p class="contactus">დაგვიკავშირდით</p>
+            <form action="" method="get">
+                <input type="text" name="name" id="name" class="namepl" placeholder="NAME" required>
+                <input type="text" name="lastname" id="lastname" class="lastnamepl" placeholder="LAST NAME">
+                <input type="text" name="email" id="email" class="emailpl" placeholder="EMAIL"required>
+                <label for="" class="date">DATE OF BIRTH</label>
+                <input type="date" name="date" id="date" class="datepl">
+                <div class="inp">
+                    <input type="checkbox" name="checkbox" id="checkbox" class="check">
+                    <label for="label" required class="labelp">I ACCEPT THE CONDITIONS</label>
+                </div>
+
+                <div class="inp">
+                    <input type="checkbox" name="checkbox" id="checkbox"class="check checkbx">
+                <label required for="labelpl"  class="labelpl"> I ACCEPT THE PRIVACY POLICY</label>
+                </div>
+            <button class="sendbtn">SEND &rarr;</button>
+            </form>
+            <div class="imglogo">
+                <img src="./logo.svg" alt="logo">
+            </div>
+            <div class="fig">
+                <p class="contactlinks"><a href="prices.html">ფასები</a></p>
+                <div class="div"></div>
+                <p class="contactlinks"><a href="sponsors.html">სპონსორები</a></p>
+            </div>
+            <p class="chat" onclick="show()">მოგვწერეთ შეტყობინება</p>
+            <div class="chatbox" id="chatbox">
+                <div class="firshalf">
+                    <p>მოგვწერეთ შეტყობინება</p>
+                    <p class="close" onclick="dissapear()">&#10008;</p>
+                </div>
+                <div class="sechalf">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="თქვენი შეტყობინება"></textarea>
+                    <p class="send">გაგზავნა</p>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="back">
+            <div class="adress">
+                <p>საბურთალო, 6 გიორგი სააკაძის დაღმართი თბილისი, საქართველო </p>
+                <p>&plus;995 514 20 83 83</p>
+                <p>k.asanidze&commat;mci.ge</p>
+                <p> &copy;. All rights reserved. </p>
+            </div>
+        </div>    
+    </footer>
+    <script src="https://kit.fontawesome.com/9eeef47944.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
